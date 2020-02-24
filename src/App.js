@@ -1,22 +1,29 @@
 import React from 'react';
 import './App.css';
-import MapContainer from './MapContainer';
+import ListContainer from './ListContainer';
+import data from "./DB";
 import axios from 'axios';
-import { Map, GoogleApiWrapper,InfoWindow, Marker  } from 'google-maps-react';
-
 
 export default class App  extends React.Component {
-// constructor(props){
-//   super(props);
-//   this.state={
- 
-//   };
-// }
+constructor(props){
+  super(props);
+  this.state={
+   data : data
+  };
+}
 
 render() {
   return (
    <div>
-       <MapContainer/>
+       <div>
+       <hi>هلا و الله</hi>
+       </div>
+       
+       <div >
+           <ListContainer data={this.state.data}/>
+     
+       </div>
+       
    </div>
   );
 }

@@ -2,6 +2,29 @@
   text-align: center;
 }
 
+
+.block{
+  width: 90%;
+  height: auto;
+  display: inline-block;
+  border:1%;
+  border:solid;
+  border-color: black;
+  padding: 2%;
+}
+.blockElemM{
+  max-width: 40%;
+  float: left; 
+  margin: auto;
+  
+}
+.blockElemT{
+  max-width: 40%;
+  float: right;
+  margin: 5%;
+}
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
