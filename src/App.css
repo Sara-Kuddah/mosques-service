@@ -1,7 +1,10 @@
 .App {
   text-align: center;
 }
-
+button{
+  width: 30%;
+  padding: 0%;
+}
 
 .Wellcom{
   background-image: url();

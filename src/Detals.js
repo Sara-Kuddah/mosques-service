@@ -35,6 +35,7 @@ export default class Detals extends React.Component{
              <ul>
                {allcomment}
              </ul>
+
              <form>
               <input type ="text" placeholder="Type your comment Here :)" 
               value={this.state.newComment}
@@ -42,7 +43,8 @@ export default class Detals extends React.Component{
               />
              <button onClick ={this.addComment} >add comment</button>
              </form>
-            <a href={this.props.url}>Visit the place using Google Map</a> 
+
+            <a href={this.props.url} target="blank">Visit the place using Google Map</a> 
          </div>
        );
 

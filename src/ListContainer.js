@@ -2,34 +2,66 @@ import React from 'react';
 import './App.css';
 import Item from './Item';
 
-export default class ListContainer extends React.Component{
-  constructor(props){
+export default class ListContainer extends React.Component {
+  constructor(props) {
     super(props);
-    this.state ={
-     data:this.props.data
-   };
+    this.state = {
+      data: this.props.data,
+      deleteChecked:false
+    };
   }
- deleteItem = (e) => {
-   console.log("Item Deleted");
-    const deleted = this.state.data.filter(i => i!==e)
-    console.log('dd', deleted)
+
+  //this function to delete one Item block
+  deleteItem = (name) => {
+    // console.log("Item Deleted", name);
+    // console.log('dd', this.state.data)
+    const deleted = this.state.data.filter(item => item.name !== name)
+    console.log('list after delete', deleted)
     this.setState({
-      data:deleted
+      data: deleted
     });
   }
+ 
+  deleteAllItem=()=>{
+    this.setState({
+      data: []
+    });
+  }
+  handleCheck=()=>{
+   
+    this.setState({deleteChecked: true});
+    console.log(this.state.deleteChecked)
+  }
+  
+  // deleteSelctedItem=(checked)=>{
+  //   const deleted = this.state.data.filter(item => item.name !== name)
+  //   console.log('list after delete', deleted)
+  //   this.setState({
+  //     data: deleted
+  //   });
+  // }
+  // callCheckBox=()=>{this.state.data.forEach((elemint, index) => 
+  //  { <Item key={index} elemint={elemint} deleteSelctedItem={this.deleteItem}  />});}
 
-     render(){
-            const allItem=this.state.data.map((elemint ,index) => {
-              return <Item key={index} elemint={elemint} deleteItem={this.deleteItem}/>;
-            });
-        console.log(this.state.data);
-       return(
-         <div>
-           
-            {allItem}
-         </div>
-       );
+  render() {
+    const allItem = this.state.data.map((elemint, index) => {
+      return (<div>
+      <Item key={index} elemint={elemint} deleteItem={this.deleteItem} deleteChecked={this.state.deleteChecked}  />
+      </div>)
+    });
+    // console.log(this.state.data);
+    console.log(this.state.deleteChecked);
+    return (
+      
+      <div>
+         <button onClick={this.deleteAllItem}>Delete All Items</button>
+         <button onClick={this.handleCheck} >Delete Selcted Items</button>
+       
+        {allItem}
+{/* {console.log(allItem)}         */}
+      </div>
+    );
 
-     }
+  }
 
 }

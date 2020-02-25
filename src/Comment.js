@@ -12,6 +12,7 @@ export default class Comment extends React.Component{
    render(){
      
     return <li>{this.state.comment} </li>;
+    
 
    }
 
