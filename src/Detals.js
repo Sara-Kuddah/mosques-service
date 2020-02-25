@@ -7,14 +7,13 @@ export default class Detals extends React.Component{
          super(props);
 
      }
+      
      render(){
        return(
          <div>
-        
-             
              <h1> {this.props.name} </h1>
            <p>{this.props.comment}</p>
-             
+            <a href={this.props.url}>Visit the place using Google Map</a> 
          </div>
        );
 

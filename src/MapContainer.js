@@ -6,7 +6,12 @@ import { Map, GoogleApiWrapper,InfoWindow, Marker  } from 'google-maps-react';
 const mapStyles = {
   width: '40%',
   height: '40%',
-  borderStyle: 'solid'
+  borderStyle: 'solid',
+  float : 'right',
+  
+  maxWidth: '40%',
+  marginLeft:'20%' ,
+  
 };
 
 export class MapContainer  extends React.Component {

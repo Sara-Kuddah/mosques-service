@@ -3,30 +3,45 @@
 }
 
 
+.Wellcom{
+  background-image: url();
+}
+
 .block{
+  display:  grid;
+  flex-direction: row ;
+  justify-content: space-between;
   width: 90%;
   height: auto;
-  display: inline-block;
   border:1%;
   border:solid;
   border-color: black;
   padding: 2%;
+  margin: 1%;
+}
+.item{
+  order: inherit;
 }
 .blockElemM{
+  display: inline-grid;
   max-width: 40%;
-  float: left; 
   margin: auto;
+  float: right;
+ 
   
 }
 .blockElemT{
-  max-width: 40%;
-  float: right;
-  margin: 5%;
+  display: inline-grid;
+  max-width: 60%;
+  float: left;
+  margin: 5% 5% 10% 5% ; 
+  text-align: right;
+  
 }
 
 
 .App-logo {
-  height: 40vmin;
+  height: 40min;
   pointer-events: none;
 }
 
