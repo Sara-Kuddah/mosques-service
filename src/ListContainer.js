@@ -7,7 +7,8 @@ export default class ListContainer extends React.Component {
     super(props);
     this.state = {
       data: this.props.data,
-      deleteChecked:false
+      deleteChecked:false,
+      checedName : []
     };
   }
 
@@ -22,6 +23,28 @@ export default class ListContainer extends React.Component {
       deleteChecked:false
     });
   }
+  addToDeleteItem =(name)=>{
+    console.log("name", name);
+    console.log("this.state.checedName", this.state.checedName);
+  //  this.setState=({checedName:[...this.state.checedName,name]})
+   this.setState({
+    checedName:[...this.state.checedName,name]
+  })
+   console.log("this.state.checedName after", this.state.checedName);
+  }
+  deleteArrayItem = () => {
+    // console.log("Item Deleted", name);
+    // console.log('dd', this.state.data)
+    const deleted = this.state.data.filter(item => !(this.state.checedName.includes(item.name)) )
+    console.log('list after delete', deleted);
+    console.log('list after delete', this.state.checedName);
+   this.setState({
+    data: deleted,
+    deleteChecked:false
+   }) 
+  }
+
+
  
   deleteAllItem=()=>{
     this.setState({
@@ -39,7 +62,7 @@ export default class ListContainer extends React.Component {
   render() {
     const allItem = this.state.data.map((elemint, index) => {
       return (<div>
-      <Item key={index} elemint={elemint} deleteItem={this.deleteItem} deleteChecked={this.state.deleteChecked}  />
+      <Item key={index} elemint={elemint} addToDeleteItem={this.addToDeleteItem} deleteItem={this.deleteItem} deleteChecked={this.state.deleteChecked}  />
       </div>)
     });
     // console.log(this.state.data);
@@ -48,7 +71,7 @@ export default class ListContainer extends React.Component {
       
       <div>
          <button onClick={this.deleteAllItem}>Delete All Items</button>
-         <button onClick={this.handleCheck} >Delete Selcted Items</button>
+         <button onClick={this.deleteArrayItem} >Delete Selcted Items</button>
        
         {allItem}
 {/* {console.log(allItem)}         */}

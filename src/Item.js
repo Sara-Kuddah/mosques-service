@@ -7,7 +7,9 @@ import CheckBox from './checkBox';
 export default class Item extends React.Component{
      constructor(props){
          super(props);
-        
+         this.state={
+          checked: this.props.checked
+        };
      }
     //  onDeleteButtonClick = (e) => this.props.deleteItemX(this.props.elemint.name);
      /*
@@ -28,7 +30,7 @@ export default class Item extends React.Component{
        return(
          <div>
         <div  className="block">
-       <CheckBox deleteItem={this.props.deleteItem} deleteChecked={this.props.deleteChecked} name={this.props.elemint.name} handleCheck={this.handleCheck}/>
+       <CheckBox addToDeleteItem={this.props.addToDeleteItem} deleteChecked={this.props.deleteChecked} name={this.props.elemint.name} handleCheck={this.handleCheck}/>
         {/* <input type="checkbox" id={this.props.elemint.name} name="vehicle1" value="1"></input> */}
         <div className="blockElemM">
           

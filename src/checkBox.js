@@ -10,14 +10,19 @@ export default class CheckBox extends React.Component{
       };
   }
   isThereAnySellctedToDelete = () =>{
-    if(this.props.deleteChecked){
-      console.log(this.state.checked);
-      if(this.state.checked){
-          this.setState({checked: false})
-        this.props.deleteItem(this.props.name);
-      }
+    // if(this.props.deleteChecked){
+    //   console.log(this.state.checked);
+    console.log("0");
+      if(this.state.checked)
+       {    console.log("1");
+            this.props.addToDeleteItem(this.props.name);
+            console.log("2");
+            this.setState({checked: false})
+       }
+        //  this.setState({checked: false})
+      
     }
-  }
+
 
   handleCheck=()=> this.setState({checked: !this.state.checked});
 
@@ -32,9 +37,8 @@ export default class CheckBox extends React.Component{
       return(
         <div>
 		<input type="checkbox" onChange={this.handleCheck} defaultChecked={this.state.checked}></input> 
-	
 	  </div>
-      )
+      );
   }
 
 }
