@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bc082653a41cd7871efc58b2659cd429",
+    "revision": "f28d1c429f080fef7d53d314b335cf9a",
     "url": "/mosques-service/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mosques-service/static/css/2.47e06e2e.chunk.css"
   },
   {
-    "revision": "cd8bb99e5d35742b6949",
+    "revision": "028a23d187c6d2cf551e",
     "url": "/mosques-service/static/css/main.97698602.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mosques-service/static/js/2.646eb62e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cd8bb99e5d35742b6949",
-    "url": "/mosques-service/static/js/main.d6a45a15.chunk.js"
+    "revision": "028a23d187c6d2cf551e",
+    "url": "/mosques-service/static/js/main.50888914.chunk.js"
   },
   {
     "revision": "bbb86fb0dc7863ebd10b",
