@@ -1,22 +1,26 @@
 {
   "files": {
-    "main.css": "/mosques-service/static/css/main.85dfda31.chunk.css",
-    "main.js": "/mosques-service/static/js/main.b8629be7.chunk.js",
-    "main.js.map": "/mosques-service/static/js/main.b8629be7.chunk.js.map",
+    "main.css": "/mosques-service/static/css/main.97698602.chunk.css",
+    "main.js": "/mosques-service/static/js/main.d6a45a15.chunk.js",
+    "main.js.map": "/mosques-service/static/js/main.d6a45a15.chunk.js.map",
     "runtime-main.js": "/mosques-service/static/js/runtime-main.06c6bda3.js",
     "runtime-main.js.map": "/mosques-service/static/js/runtime-main.06c6bda3.js.map",
-    "static/js/2.0ae9d60a.chunk.js": "/mosques-service/static/js/2.0ae9d60a.chunk.js",
-    "static/js/2.0ae9d60a.chunk.js.map": "/mosques-service/static/js/2.0ae9d60a.chunk.js.map",
+    "static/css/2.47e06e2e.chunk.css": "/mosques-service/static/css/2.47e06e2e.chunk.css",
+    "static/js/2.646eb62e.chunk.js": "/mosques-service/static/js/2.646eb62e.chunk.js",
+    "static/js/2.646eb62e.chunk.js.map": "/mosques-service/static/js/2.646eb62e.chunk.js.map",
     "index.html": "/mosques-service/index.html",
-    "precache-manifest.3194a9a414f996c816f45af4ed465bbc.js": "/mosques-service/precache-manifest.3194a9a414f996c816f45af4ed465bbc.js",
+    "precache-manifest.09173e2f32e15ad03117d79259ddf6d0.js": "/mosques-service/precache-manifest.09173e2f32e15ad03117d79259ddf6d0.js",
     "service-worker.js": "/mosques-service/service-worker.js",
-    "static/css/main.85dfda31.chunk.css.map": "/mosques-service/static/css/main.85dfda31.chunk.css.map",
-    "static/js/2.0ae9d60a.chunk.js.LICENSE.txt": "/mosques-service/static/js/2.0ae9d60a.chunk.js.LICENSE.txt"
+    "static/css/2.47e06e2e.chunk.css.map": "/mosques-service/static/css/2.47e06e2e.chunk.css.map",
+    "static/css/main.97698602.chunk.css.map": "/mosques-service/static/css/main.97698602.chunk.css.map",
+    "static/js/2.646eb62e.chunk.js.LICENSE.txt": "/mosques-service/static/js/2.646eb62e.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/mosques-service/static/media/mainPic2.b662b7ee.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.06c6bda3.js",
-    "static/js/2.0ae9d60a.chunk.js",
-    "static/css/main.85dfda31.chunk.css",
-    "static/js/main.b8629be7.chunk.js"
+    "static/css/2.47e06e2e.chunk.css",
+    "static/js/2.646eb62e.chunk.js",
+    "static/css/main.97698602.chunk.css",
+    "static/js/main.d6a45a15.chunk.js"
   ]
 }
