@@ -70,8 +70,8 @@ export default class ListContainer extends React.Component {
     return (
       
       <div>
-         <button onClick={this.deleteAllItem}>Delete All Items</button>
-         <button onClick={this.deleteArrayItem} >Delete Selcted Items</button>
+         <button onClick={this.deleteAllItem} className="btn btn-danger">Delete All Items</button>
+         <button onClick={this.deleteArrayItem} className="btn btn-warning">Delete Selcted Items</button>
        
         {allItem}
 {/* {console.log(allItem)}         */}

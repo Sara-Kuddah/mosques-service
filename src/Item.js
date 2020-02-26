@@ -29,16 +29,18 @@ export default class Item extends React.Component{
    
        return(
          <div>
-        <div  className="block">
+        <div  className="block card">
+        <button className="btn btn-secondary" onClick={()=>this.props.deleteItem(this.props.elemint.name)}>Delete This Item</button>
        <CheckBox addToDeleteItem={this.props.addToDeleteItem} deleteChecked={this.props.deleteChecked} name={this.props.elemint.name} handleCheck={this.handleCheck}/>
+
         {/* <input type="checkbox" id={this.props.elemint.name} name="vehicle1" value="1"></input> */}
-        <div className="blockElemM">
+        <div className="blockElemM card-img-top "  >
           
         <MapContainer name={this.props.elemint.name} lat={this.props.elemint.geometry.location.lat}  lng={this.props.elemint.geometry.location.lng}/>
         </div>
 
-        <div className="blockElemT">
-        <button onClick={()=>this.props.deleteItem(this.props.elemint.name)}>Delete This Item</button>
+        <div className="blockElemT card-text" >
+       
         <Detals name={this.props.elemint.name} comment={this.props.elemint.comment} url= {this.props.elemint.url}/>
         </div>
         

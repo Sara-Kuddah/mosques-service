@@ -1,8 +1,10 @@
 import React from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import ListContainer from './ListContainer';
 import data from "./DB";
 import axios from 'axios';
+import Wellcom from './Wellcom'
 
 export default class App  extends React.Component {
 constructor(props){
@@ -17,6 +19,7 @@ render() {
    <div>
        <div>
        <hi>هلا و الله</hi>
+       <Wellcom  className="mainDiv"/>
        </div>
        
        <div >

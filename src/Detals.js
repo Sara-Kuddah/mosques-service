@@ -30,7 +30,7 @@ export default class Detals extends React.Component{
       });
        return(
          <div>
-             <h1> {this.props.name} </h1>
+             <h1 className ="card-title"> {this.props.name} </h1>
 
              <ul>
                {allcomment}
@@ -41,7 +41,7 @@ export default class Detals extends React.Component{
               value={this.state.newComment}
               onChange={this.onTextBoxChange}
               />
-             <button onClick ={this.addComment} >add comment</button>
+             <button className="btn btn-secondary" onClick ={this.addComment} >add comment</button>
              </form>
 
             <a href={this.props.url} target="blank">Visit the place using Google Map</a> 

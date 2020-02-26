@@ -35,7 +35,7 @@ export default class Comment extends React.Component{
         console.log('hi0');
         if(this.state.needToEdit){
     console.log('hi');
-    return( <li><input type="text" placeholder="Type your comment Here :)" value={this.state.newComment} onChange={this.onTextBoxChange}/> </li>);
+    return( <div><li><input type="text" placeholder="Type your comment Here :)" value={this.state.newComment} onChange={this.onTextBoxChange} className="btn btn-success"/> </li> <button onClick={this.addComment}>done</button></div>);
         }
 
     }
@@ -55,8 +55,8 @@ export default class Comment extends React.Component{
     return (<div> 
     <li>{this.state.comment} 
       { this.fun()}
-    <button onClick={this.addComment}>done</button>
-    <button onClick={this.handleCheck}>Edit</button>
+    <br/> 
+    <button className="btn btn-info" onClick={this.handleCheck}>Edit</button>
     </li>
     </div>);
     // return( <li><input type="text" id={this.props.key} value={this.state.comment}/>

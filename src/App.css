@@ -2,8 +2,9 @@
   text-align: center;
 }
 button{
-  width: 30%;
+  /* width: 0%; */
   padding: 0%;
+  margin: 2%;
 }
 
 .Wellcom{
@@ -14,18 +15,29 @@ button{
   display:  grid;
   flex-direction: row ;
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
   height: auto;
   border:1%;
   border:solid;
   border-color: black;
   padding: 2%;
   margin: 1%;
- 
+ background-color: rgba(211, 211, 196, 0.87);
 }
 .item{
   order: inherit;
 }
+body{
+  background: url('./mainPic2.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.bg-primary-my{
+  background-color: rgb(131, 127, 117,.6);
+}
+
 .blockElemM{
  
   display: inline-grid;
