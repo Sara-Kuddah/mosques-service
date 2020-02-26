@@ -18,7 +18,8 @@ export default class ListContainer extends React.Component {
     const deleted = this.state.data.filter(item => item.name !== name)
     console.log('list after delete', deleted)
     this.setState({
-      data: deleted
+      data: deleted,
+      deleteChecked:false
     });
   }
  
@@ -33,15 +34,7 @@ export default class ListContainer extends React.Component {
     console.log(this.state.deleteChecked)
   }
   
-  // deleteSelctedItem=(checked)=>{
-  //   const deleted = this.state.data.filter(item => item.name !== name)
-  //   console.log('list after delete', deleted)
-  //   this.setState({
-  //     data: deleted
-  //   });
-  // }
-  // callCheckBox=()=>{this.state.data.forEach((elemint, index) => 
-  //  { <Item key={index} elemint={elemint} deleteSelctedItem={this.deleteItem}  />});}
+ 
 
   render() {
     const allItem = this.state.data.map((elemint, index) => {

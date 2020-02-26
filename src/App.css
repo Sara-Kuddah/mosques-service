@@ -21,16 +21,18 @@ button{
   border-color: black;
   padding: 2%;
   margin: 1%;
+ 
 }
 .item{
   order: inherit;
 }
 .blockElemM{
+ 
   display: inline-grid;
   max-width: 40%;
   margin: auto;
   float: right;
- 
+  
   
 }
 .blockElemT{
