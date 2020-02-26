@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/mosques-service/static/css/main.85dfda31.chunk.css",
+    "main.js": "/mosques-service/static/js/main.1554aa6d.chunk.js",
+    "main.js.map": "/mosques-service/static/js/main.1554aa6d.chunk.js.map",
+    "runtime-main.js": "/mosques-service/static/js/runtime-main.06c6bda3.js",
+    "runtime-main.js.map": "/mosques-service/static/js/runtime-main.06c6bda3.js.map",
+    "static/js/2.0ae9d60a.chunk.js": "/mosques-service/static/js/2.0ae9d60a.chunk.js",
+    "static/js/2.0ae9d60a.chunk.js.map": "/mosques-service/static/js/2.0ae9d60a.chunk.js.map",
+    "index.html": "/mosques-service/index.html",
+    "precache-manifest.2c96ef03c7ae78e304aa411ef8f6c743.js": "/mosques-service/precache-manifest.2c96ef03c7ae78e304aa411ef8f6c743.js",
+    "service-worker.js": "/mosques-service/service-worker.js",
+    "static/css/main.85dfda31.chunk.css.map": "/mosques-service/static/css/main.85dfda31.chunk.css.map",
+    "static/js/2.0ae9d60a.chunk.js.LICENSE.txt": "/mosques-service/static/js/2.0ae9d60a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.06c6bda3.js",
+    "static/js/2.0ae9d60a.chunk.js",
+    "static/css/main.85dfda31.chunk.css",
+    "static/js/main.1554aa6d.chunk.js"
+  ]
+}
