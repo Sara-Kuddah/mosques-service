@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/mosques-service/static/css/main.97698602.chunk.css",
-    "main.js": "/mosques-service/static/js/main.50888914.chunk.js",
-    "main.js.map": "/mosques-service/static/js/main.50888914.chunk.js.map",
+    "main.js": "/mosques-service/static/js/main.25aab2c3.chunk.js",
+    "main.js.map": "/mosques-service/static/js/main.25aab2c3.chunk.js.map",
     "runtime-main.js": "/mosques-service/static/js/runtime-main.06c6bda3.js",
     "runtime-main.js.map": "/mosques-service/static/js/runtime-main.06c6bda3.js.map",
     "static/css/2.47e06e2e.chunk.css": "/mosques-service/static/css/2.47e06e2e.chunk.css",
     "static/js/2.646eb62e.chunk.js": "/mosques-service/static/js/2.646eb62e.chunk.js",
     "static/js/2.646eb62e.chunk.js.map": "/mosques-service/static/js/2.646eb62e.chunk.js.map",
     "index.html": "/mosques-service/index.html",
-    "precache-manifest.8d1b62670b249365fb676a6be4972fbb.js": "/mosques-service/precache-manifest.8d1b62670b249365fb676a6be4972fbb.js",
+    "precache-manifest.492f96b3dfeda5b6e6ad172d39384deb.js": "/mosques-service/precache-manifest.492f96b3dfeda5b6e6ad172d39384deb.js",
     "service-worker.js": "/mosques-service/service-worker.js",
     "static/css/2.47e06e2e.chunk.css.map": "/mosques-service/static/css/2.47e06e2e.chunk.css.map",
     "static/css/main.97698602.chunk.css.map": "/mosques-service/static/css/main.97698602.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.47e06e2e.chunk.css",
     "static/js/2.646eb62e.chunk.js",
     "static/css/main.97698602.chunk.css",
-    "static/js/main.50888914.chunk.js"
+    "static/js/main.25aab2c3.chunk.js"
   ]
 }
