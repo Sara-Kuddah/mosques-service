@@ -74,7 +74,7 @@ export default class ListContainer extends React.Component {
          <button onClick={this.deleteArrayItem} className="btn btn-warning">Delete Selcted Items</button>
        
         {allItem}
-{/* {console.log(allItem)}         */}
+
       </div>
     );
 

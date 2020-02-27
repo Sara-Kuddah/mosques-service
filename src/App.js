@@ -18,7 +18,6 @@ render() {
   return (
    <div>
        <div>
-       <hi>هلا و الله</hi>
        <Wellcom  className="mainDiv"/>
        </div>
        

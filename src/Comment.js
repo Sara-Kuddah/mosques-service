@@ -35,7 +35,7 @@ export default class Comment extends React.Component{
         console.log('hi0');
         if(this.state.needToEdit){
     console.log('hi');
-    return( <div><li><input type="text" placeholder="Type your comment Here :)" value={this.state.newComment} onChange={this.onTextBoxChange} className="btn btn-success"/> </li> <button onClick={this.addComment}>done</button></div>);
+    return( <div><li><input type="text" placeholder="Type your comment Here :)" value={this.state.newComment} onChange={this.onTextBoxChange}/> </li> <button onClick={this.addComment}  className="btn btn-success" >done</button></div>);
         }
 
     }
