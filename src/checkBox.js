@@ -19,7 +19,6 @@ export default class CheckBox extends React.Component{
             console.log("2");
             this.setState({checked: false})
        }
-        //  this.setState({checked: false})
       
     }
 

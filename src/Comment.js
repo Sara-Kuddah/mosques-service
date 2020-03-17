@@ -32,9 +32,8 @@ export default class Comment extends React.Component{
         this.setState({needToEdit:true})
     }
     fun = () =>{
-        console.log('hi0');
         if(this.state.needToEdit){
-    console.log('hi');
+   
     return( <div><li><input type="text" placeholder="Type your comment Here :)" value={this.state.newComment} onChange={this.onTextBoxChange}/> </li> <button onClick={this.addComment}  className="btn btn-success" >done</button></div>);
         }
 
@@ -49,7 +48,7 @@ export default class Comment extends React.Component{
               }
             }
           }
-    //      }
+  
    render(){
      
     return (<div> 
@@ -59,10 +58,7 @@ export default class Comment extends React.Component{
     <button className="btn btn-info" onClick={this.handleCheck}>Edit</button>
     </li>
     </div>);
-    // return( <li><input type="text" id={this.props.key} value={this.state.comment}/>
-        
-    //      </li>);
-    
+   
 
    }
 }

@@ -11,12 +11,7 @@ export default class Item extends React.Component{
           checked: this.props.checked
         };
      }
-    //  onDeleteButtonClick = (e) => this.props.deleteItemX(this.props.elemint.name);
-     /*
-      onDeleteButtonClick = (e) =>
-        this.props.deleteItem(this.props.elemint.name)
-     */
-    
+ 
     isThereAnySellctedToDelete=()=>{
       if(this.props.deleteChecked){
       this.props.deleteItem(this.props.elemint.name);
@@ -25,7 +20,7 @@ export default class Item extends React.Component{
     }
   
      render(){
-    //  this.isThereAnySellctedToDelete();
+    
    
        return(
          <div>
@@ -33,7 +28,6 @@ export default class Item extends React.Component{
         <button className="btn btn-secondary" onClick={()=>this.props.deleteItem(this.props.elemint.name)}>Delete This Item</button>
        <CheckBox addToDeleteItem={this.props.addToDeleteItem} deleteChecked={this.props.deleteChecked} name={this.props.elemint.name} handleCheck={this.handleCheck}/>
 
-        {/* <input type="checkbox" id={this.props.elemint.name} name="vehicle1" value="1"></input> */}
         <div className="blockElemM card-img-top "  >
           
         <MapContainer name={this.props.elemint.name} lat={this.props.elemint.geometry.location.lat}  lng={this.props.elemint.geometry.location.lng}/>

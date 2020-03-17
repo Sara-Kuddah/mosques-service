@@ -14,8 +14,6 @@ export default class ListContainer extends React.Component {
 
   //this function to delete one Item block
   deleteItem = (name) => {
-    // console.log("Item Deleted", name);
-    // console.log('dd', this.state.data)
     const deleted = this.state.data.filter(item => item.name !== name)
     console.log('list after delete', deleted)
     this.setState({
@@ -23,6 +21,7 @@ export default class ListContainer extends React.Component {
       deleteChecked:false
     });
   }
+
   addToDeleteItem =(name)=>{
     console.log("name", name);
     console.log("this.state.checedName", this.state.checedName);
@@ -32,9 +31,9 @@ export default class ListContainer extends React.Component {
   })
    console.log("this.state.checedName after", this.state.checedName);
   }
+
+
   deleteArrayItem = () => {
-    // console.log("Item Deleted", name);
-    // console.log('dd', this.state.data)
     const deleted = this.state.data.filter(item => !(this.state.checedName.includes(item.name)) )
     console.log('list after delete', deleted);
     console.log('list after delete', this.state.checedName);
@@ -44,15 +43,13 @@ export default class ListContainer extends React.Component {
    }) 
   }
 
-
- 
   deleteAllItem=()=>{
     this.setState({
       data: []
     });
   }
+
   handleCheck=()=>{
-   
     this.setState({deleteChecked: true});
     console.log(this.state.deleteChecked)
   }
@@ -65,14 +62,13 @@ export default class ListContainer extends React.Component {
       <Item key={index} elemint={elemint} addToDeleteItem={this.addToDeleteItem} deleteItem={this.deleteItem} deleteChecked={this.state.deleteChecked}  />
       </div>)
     });
-    // console.log(this.state.data);
+    
     console.log(this.state.deleteChecked);
     return (
       
       <div>
          <button onClick={this.deleteAllItem} className="btn btn-danger">Delete All Items</button>
          <button onClick={this.deleteArrayItem} className="btn btn-warning">Delete Selcted Items</button>
-       
         {allItem}
 
       </div>
